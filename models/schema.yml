@@ -50,10 +50,6 @@ sources:
                   column_name: order_id
 
 models:
-   # Staging #
-   # ...snip...
-
-   # Intermediate #
    - name: int_orders_margin
      description: margin calculation per order
      columns:
@@ -154,3 +150,19 @@ models:
          description: the cost of preparing the parcel in the distribution centre/warehouse
        - name: ship_cost
          description: shipping cost paid by Greenweez to the carrier/logistics provider
+   - name: finance_days
+     description: finance team requirements 
+     columns:
+     - name: date_date
+     - name: nb_transactions
+     - name: revenue
+     - name: average_basket
+     - name: average_basket_bis
+     - name: margin
+     - name: operational_margin
+     - name: purchase_cost
+     - name: shipping_fee
+     - name: log_cost
+     - name: ship_cost
+     - name: quantity
+     
